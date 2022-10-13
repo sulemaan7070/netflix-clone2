@@ -8,7 +8,7 @@ import RowBig from "./RowBig";
 
 function HomeScreen() {
   return (
-    <div>
+    <div className="home__screen">
       <Nav />
       <Banner />
       <RowBig
