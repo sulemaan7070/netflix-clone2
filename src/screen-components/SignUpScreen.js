@@ -2,10 +2,10 @@ import React, { useRef } from "react";
 import { auth } from "../firebase";
 import "./SignUpScreen.css";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+
 
 function SignUpScreen() {
-  const history = useNavigate();
+  
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
   const newEmail = useRef(null);
