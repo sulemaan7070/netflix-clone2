@@ -3,6 +3,9 @@ import { auth } from "../firebase";
 import "./SignUpScreen.css";
 import { motion } from "framer-motion";
 
+  /**The prevent default() allows to
+   *  avaoid the default refreshing style of a form*/
+
 
 function SignUpScreen() {
   
@@ -10,17 +13,14 @@ function SignUpScreen() {
   const passwordRef = useRef(null);
   const newEmail = useRef(null);
   const newPassword = useRef(null);
-  {
-    /**The prevent default() allows to
-     *  avaoid the default refreshing style of a form*/
-  }
+ 
 
   const register = (event) => {
     event.preventDefault();
-    {/*
-    *The auth function below is used to create a new user with the email and password
-    the emailRef.current.value will hel us poiting to the email entered in the register form and same for the password
-   */}
+    
+    //*The auth function below is used to create a new user with the email and password
+    //the emailRef.current.value will hel us poiting to the email entered in the register form and same for the password
+   
     auth
       .createUserWithEmailAndPassword(
         newEmail.current.value,
