@@ -1,10 +1,11 @@
 .loginScreen {
   position: relative;
   height: 100%;
-
   background: url("https://i.imgur.com/SIGdGEu.jpg") center no-repeat;
   background-size: cover;
 }
+
+
 .loginScreen__logo {
   position: fixed;
   left: 0;
@@ -86,4 +87,16 @@
   background-color: #e50914;
   border: none;
   font-weight: 600;
+  cursor: pointer;
+}
+
+.container{
+  height:500px;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
 }

@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 function Login() {
   const [signIN, setSignIn] = useState(false);
   return (
+    <div className="twoBoxes">
     <div className="loginScreen">
       <div className="loginScreen__background">
         <img
@@ -41,18 +42,26 @@ function Login() {
               <div className="loginScreen__input">
                 <form>
                   <input type="text" placeholder="Email address" />
-                  <button
+                  <motion.button
+                  whileHover={{
+                    scale: 1.1,
+                    transition: { duration: 0.4 },
+                  }}
+                  whileTap={{ scale: 0.9 }}
                     onClick={() => setSignIn(true)}
                     className="loginScreen__getStarted"
                   >
                     Get started
-                  </button>
+                  </motion.button>
                 </form>
               </div>
             </>
           )}
         </div>
       </div>
+
+    </div>
+    <div className={signIN?`container`:null}></div>
     </div>
   );
 }
