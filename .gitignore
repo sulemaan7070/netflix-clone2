@@ -10,6 +10,8 @@
 
 # production
 
+src/Requests
+src/firebase
 
 # misc
 .DS_Store
@@ -23,6 +25,3 @@ yarn-debug.log*
 yarn-error.log*
 
 Requests.js
-
-/src/Requests.js
-/src/firebase.js
