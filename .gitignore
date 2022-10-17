@@ -10,8 +10,8 @@
 
 # production
 
-src/Requests
-src/firebase
+/src/Requests
+/src/firebase
 
 # misc
 .DS_Store
