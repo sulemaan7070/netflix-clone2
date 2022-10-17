@@ -24,4 +24,5 @@ yarn-error.log*
 
 Requests.js
 
-/firebase.js
+src/Requests.js
+src/firebase.js
