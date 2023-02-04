@@ -40,7 +40,7 @@ function SignUpScreen(props) {
       .then((authUser) => {
         console.log(authUser);
         setTimeout(() => {
-          alert("user created successfully");
+          // alert("user created successfully");
         }, 2000);
         history("/login");
         auth.signOut();

@@ -10,7 +10,7 @@ function LoginreDirect() {
     <div className="twoBoxes">
       <div className="loginScreen">
         <h1 className="successh1">
-          User created successfully!✅ <br /> sign in to continue
+          Account created successfully!✅ <br /> sign in to continue
         </h1>
         <div className="loginScreen__background">
           <img
