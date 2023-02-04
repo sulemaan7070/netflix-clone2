@@ -47,18 +47,6 @@ function ProfileScreen() {
               >
                 Sign out
               </motion.button>
-
-              <motion.button
-                whileHover={{
-                  scale: 1.1,
-                  transition: { duration: 0.4 },
-                }}
-                whileTap={{ scale: 0.9 }}
-                className="arrow"
-                onClick={() => history("/")}
-              >
-                ⬅️Explore Netflix
-              </motion.button>
             </div>
             {/**profileScreen__plans ended */}
           </div>
