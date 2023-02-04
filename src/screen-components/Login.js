@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Login.css";
 import SignUpScreen from "./SignUpScreen";
+import netflixLogo from "../imgs/netflix-logo.png";
 import { motion } from "framer-motion";
 function Login() {
   const [signIN, setSignIn] = useState(false);
@@ -9,11 +10,7 @@ function Login() {
     <div className="twoBoxes">
       <div className="loginScreen">
         <div className="loginScreen__background">
-          <img
-            className="loginScreen__logo"
-            src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
-            alt=""
-          />
+          <img className="loginScreen__logo" src={netflixLogo} alt="" />
           {/** here we are conditionally rendering the Sign In screen when user
         clicks on either of the "Sign in" button or "get started" button **/}
           <motion.button
