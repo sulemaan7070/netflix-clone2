@@ -7,6 +7,7 @@ import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/counter/userSlice";
 import ProfileScreen from "./screen-components/ProfileScreen";
+import LoginreDirect from "./screen-components/LoginreDirect";
 /**
  * In react-router-dom version v6+ the "Switch" has been replaced with "Routes"
  * import { Switch, Route } from "react-router-dom";
@@ -14,6 +15,7 @@ import ProfileScreen from "./screen-components/ProfileScreen";
 
 function App() {
   const user = useSelector(selectUser);
+
   const dispatch = useDispatch();
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
@@ -36,18 +38,15 @@ function App() {
   return (
     <div className="app">
       <Router>
-        {!user ? (
-          <Login />
-        ) : (
-          <Routes>
-            <Route path="/" element={<HomeScreen />} />
-            <Route path="/profile" element={<ProfileScreen />} />
-          </Routes>
-        )}
+        <Routes>
+          {!user && <Route path="/" element={<Login />} />}
+          {user && <Route path="/" element={<HomeScreen />} />}
+          {user && <Route path="/profile" element={<ProfileScreen />} />}
+        </Routes>
 
-        {/* <Routes>
-          <Route  path="/login"  element={<Login/>} />
-        </Routes> */}
+        <Routes>
+          <Route path="/login" element={<LoginreDirect />} />
+        </Routes>
       </Router>
     </div>
   );

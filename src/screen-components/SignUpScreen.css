@@ -92,7 +92,14 @@
   margin-bottom: 25px;
 }
 
-.createUser__screen{
+.createUser__screen {
   margin-left: 50px;
 }
 
+.successh1 {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  color: #fff;
+}

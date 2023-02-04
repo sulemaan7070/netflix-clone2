@@ -43,7 +43,6 @@ function ProfileScreen() {
                   auth.signOut();
                   history("/");
                 }}
-                
                 className="profileScreen__signOut"
               >
                 Sign out

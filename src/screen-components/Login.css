@@ -5,7 +5,6 @@
   background-size: cover;
 }
 
-
 .loginScreen__logo {
   position: fixed;
   left: 0;
@@ -44,14 +43,14 @@
 
 .loginScreen__body {
   position: absolute;
-  top: 30%;
+  top: 22%;
   color: #fff;
   z-index: 1;
   padding: 20px;
-  
+
   text-align: center;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
 }
 .loginScreen__body > h1 {
   font-size: 3.125rem;
@@ -90,8 +89,8 @@
   cursor: pointer;
 }
 
-.container{
-  height:500px;
+.container {
+  height: 0px;
   background: rgba(0, 0, 0, 0.4);
   background-image: linear-gradient(
     0deg,
